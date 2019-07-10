@@ -1,0 +1,15 @@
+body {
+  font-family: 'Mitr', sans-serif;
+  font-size: 3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  margin-left: '5%';
+  margin-right: '5%';
+}
+
+title {
+  margin-bottom: '-2%';
+}

@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { Layout, Row, Typography } from 'antd';
+import 'antd/dist/antd.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import UsersComponent from './components/Users'
+
+const { Title } = Typography;
+const { Header, Content, Footer } = Layout;
+
+class App extends Component {
+
+  render() {
+
+    return (
+      <Layout>
+        <Header>
+          <Title style={{ color: 'white', marginTop: '6px' }}>Paiduaykanmai</Title>
+        </Header>
+        <Content>
+          <Row>
+            <div
+              className="container"
+              style={{
+                marginTop: '2%',
+                // marginBottom: '2%',
+                marginLeft: '5%',
+                marginRight: '5%',
+              }}
+            >
+              <UsersComponent />
+            </div>
+          </Row>
+        </Content>
+        <Footer></Footer>
+      </Layout >
+    )
+  }
 }
 
-export default App;
+export default App
